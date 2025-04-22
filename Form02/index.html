@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Busca do que você quiser por cidade e período:</h1>
-    <form action="cad.php">
+    <form action="cad.php" method="post" autocomplete="off">
         <label for="iestado">Estado:</label>
         <select name="estado" id="iestado">
             <optgroup label="Região Sudeste">
@@ -51,6 +51,199 @@
                 <option value="AC">Acre</option>
                 <option value="AP">Amapá</option>
                 <option value="TO">Tocantins</option>
+            </optgroup>
+        </select>
+        <label for="icidade">Cidade:</label>
+        <select name="cidade" id="icidade">
+            <optgroup label="São Paulo">
+                <option value="cd">São Paulo</option>
+                <option value="cd">Guarulhos</option>
+                <option value="cd">Campinas</option>
+                <option value="cd">São Bernardo do Campo</option>
+                <option value="cd">Santo André</option>
+                <option value="cd">Sorocaba</option>
+            </optgroup>
+            <optgroup label="Minas Gerais">
+                <option value="cd">Belo Horizonte</option>
+                <option value="cd">Uberlândia</option>
+                <option value="cd">Contagem</option>
+                <option value="cd">Juiz de Fora</option>
+                <option value="cd">Pintopólis</option>
+            </optgroup>
+            <optgroup label="Rio de Janeiro">
+                <option value="cd">Rio de Janeiro</option>
+                <option value="cd">São Gonçalo</option>
+                <option value="cd">Duque de Caxias</option>
+                <option value="cd">Niterói</option>
+                <option value="cd">Ilha do Governador</option>
+            </optgroup>
+            <optgroup label="Espirito Santo">
+                <option value="cd">Serra</option>
+                <option value="cd">Vila Velha</option>
+                <option value="cd">Cariacica</option>
+                <option value="cd">Vitória</option>
+                <option value="cd">Cachoeira de Itapemirim</option>
+            </optgroup>
+            <optgroup label="Rio Grande do Sul">
+                <option value="cd">Porto Alegre</option>
+                <option value="cd">Caxias do Sul</option>
+                <option value="cd">Pelotas</option>
+                <option value="cd">Canoas</option>
+                <option value="cd">Santa Maria</option>
+            </optgroup>
+            <optgroup label="Santa Catarina">
+                <option value="cd">Florianópolis</option>
+                <option value="cd">Joinville</option>
+                <option value="cd">Blumenau</option>
+                <option value="cd">São José</option>
+                <option value="cd">Chapecó</option>
+            </optgroup>
+            <optgroup label="Paraná">
+                <option value="cd">Curitiba</option>
+                <option value="cd">Londrina</option>
+                <option value="cd">Maringá</option>
+                <option value="cd">Ponta Grossa</option>
+                <option value="cd">Cascavel</option>
+            </optgroup>
+            <optgroup label="Mato Grosso">
+                <option value="cd">Cuiabá </option>
+                <option value="cd">Várzea Grande</option>
+                <option value="cd">Rondonópolis</option>
+                <option value="cd">Sinop</option>
+                <option value="cd">Tangará da Serra</option>
+            </optgroup>
+            <optgroup label="Mato Grosso do Sul">
+                <option value="cd">Campo Grande</option>
+                <option value="cd">Dourados</option>
+                <option value="cd">Três Lagoas</option>
+                <option value="cd">Corumbá</option>
+                <option value="cd">Ponta Porã</option>
+            </optgroup>
+            <optgroup label="Goiás">
+                <option value="cd">Goiânia</option>
+                <option value="cd">Aparecida de Goiânia</option>
+                <option value="cd">Anápolis</option>
+                <option value="cd">Rio Verde</option>
+                <option value="cd">Luziânia</option>
+            </optgroup>
+            <optgroup label="Distrito Federal">
+                <option value="cd">Brasília</option>
+                <option value="cd">Ceilândia</option>
+                <option value="cd">Samambaia</option>
+                <option value="cd">Plano Piloto</option>
+                <option value="cd">Gama</option>
+            </optgroup>
+            <optgroup label="Bahia">
+                <option value="cd">Salvador</option>
+                <option value="cd">Feira de Santana</option>
+                <option value="cd">Vitória da Conquista</option>
+                <option value="cd">Camaçari</option>
+                <option value="cd">Itabuna</option>
+            </optgroup>
+            <optgroup label="Pernambuco">
+                <option value="cd">Recife</option>
+                <option value="cd">Jaboatão dos Guararapes</option>
+                <option value="cd">Olinda</option>
+                <option value="cd">Caruaru</option>
+                <option value="cd">Petrolina</option>
+            </optgroup>
+            <optgroup label="Maranhão">
+                <option value="cd">São Luís</option>
+                <option value="cd">Imperatriz</option>
+                <option value="cd">São José do Ribamar</option>
+                <option value="cd">Caxias</option>
+                <option value="cd">Timon</option>
+            </optgroup>
+            <optgroup label="Piauí">
+                <option value="cd">Teresina</option>
+                <option value="cd">Parnaíba</option>
+                <option value="cd">Picos</option>
+                <option value="cd">Piripiri</option>
+                <option value="cd">Floriano</option>
+            </optgroup>
+            <optgroup label="Ceará">
+                <option value="cd">Fortaleza</option>
+                <option value="cd">Caucaia</option>
+                <option value="cd">Juazeiro do Norte</option>
+                <option value="cd">Maracanaú</option>
+                <option value="cd">Sobral</option>
+            </optgroup>
+            <optgroup label="Rio Grande do Norte">
+                <option value="cd">Natal</option>
+                <option value="cd">Mossoró</option>
+                <option value="cd">Parnamirim</option>
+                <option value="cd">São Gonçalo do Amarante</option>
+                <option value="cd">Macaíba</option>
+            </optgroup>
+            <optgroup label="Paraíba">
+                <option value="cd">João Pessoa</option>
+                <option value="cd">Campina Grande</option>
+                <option value="cd">Santa Rita</option>
+                <option value="cd">Patos</option>
+                <option value="cd">Bayeux</option>
+            </optgroup>
+            <optgroup label="Sergipe">
+                <option value="cd">Aracaju</option>
+                <option value="cd">Nossa Senhora do Socorro</option>
+                <option value="cd">Lagarto</option>
+                <option value="cd">Itabaiana</option>
+                <option value="cd">São Cristovão</option>
+            </optgroup>
+            <optgroup label="Alagoas">
+                <option value="cd">Maceió</option>
+                <option value="cd">Arapiraca</option>
+                <option value="cd">Rio Largo</option>
+                <option value="cd">Palmeira dos Índios</option>
+                <option value="cd">União dos Palmares</option>
+            </optgroup>
+            <optgroup label="Amazonas">
+                <option value="cd">Manaus</option>
+                <option value="cd">Parintins</option>
+                <option value="cd">Itacoatiara</option>
+                <option value="cd">Manacapuru</option>
+                <option value="cd">Coari</option>
+            </optgroup>
+            <optgroup label="Pará">
+                <option value="cd"></option>
+                <option value="cd"></option>
+                <option value="cd"></option>
+                <option value="cd"></option>
+                <option value="cd"></option>
+            </optgroup>
+            <optgroup label="Roraima">
+                <option value="cd">Boa Vista</option>
+                <option value="cd">Rorainópolis</option>
+                <option value="cd">Caracaraí</option>
+                <option value="cd">Alto Alegre</option>
+                <option value="cd">Mucajaí</option>
+            </optgroup>
+            <optgroup label="Rondônia">
+                <option value="cd">Porto Velho</option>
+                <option value="cd">Ji-Paraná</option>
+                <option value="cd">Ariquemes</option>
+                <option value="cd">Vilhena</option>
+                <option value="cd">Cacoal</option>
+            </optgroup>
+            <optgroup label="Acre">
+                <option value="cd">Rio Branco</option>
+                <option value="cd">Cruzeiro do Sul</option>
+                <option value="cd">Sena Madureira</option>
+                <option value="cd">Tarauacá</option>
+                <option value="cd">Feijó</option>
+            </optgroup>
+            <optgroup label="Amapá">
+                <option value="cd">Macapá</option>
+                <option value="cd">Santana</option>
+                <option value="cd">Laranjal do Jari</option>
+                <option value="cd">Oiapoque</option>
+                <option value="cd">Mazagão</option>
+            </optgroup>
+            <optgroup label="Tocantins">
+                <option value="cd">Palmas</option>
+                <option value="cd">Araguaína</option>
+                <option value="cd">Gurupi</option>
+                <option value="cd">Porto Nacional</option>
+                <option value="cd">Paraíso do Tocantins</option>
             </optgroup>
         </select>
     </form>
