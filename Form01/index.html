@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Formulário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section>
+        <h1>FORMULÁRIO DE CONTATO</h1>
+        <form action="cad.php" method="post" autocomplete="on">
+            <p>
+                <label for="inome" class="txt-label">Nome:</label>
+                <br>
+                <input type="text" name="nome" id="inome" required placeholder="Fulano..." autocomplete="name">
+            </p>
+            <p>
+                <label for="iemail" class="txt-label">E-mail:</label>
+                <br>
+                <input type="email" name="email" id="iemail" required placeholder="exemplo@gmail.com" autocomplete="email">
+            </p>
+            <p>
+                <label for="itexto" class="txt-label">Texto:</label>
+                <br>
+                <textarea name="texto" id="itexto" placeholder="Digite seu comentário aqui..."></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </section>
+    <footer>
+        <p>Esse tela de formulário foi inspirado nessa <a href="https://miro.medium.com/v2/resize:fit:473/1*TND4ORtdIFP0WrE9cFx73A.jpeg" target="_blank">imagem</a></p>
+    </footer>
+</body>
+</html>
